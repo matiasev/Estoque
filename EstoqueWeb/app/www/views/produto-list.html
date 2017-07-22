@@ -1,0 +1,29 @@
+<section>
+    <legend>Lista de produtos</legend>
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Quantidade</th>
+                <th>Preço</th>
+                <th></th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody ng-repeat="prod in vm.produtos">
+            <tr>
+                    <td>{{prod.produtoID}}</td>
+                    <td>{{prod.nome}}</td>
+                    <td>{{prod.quantidade}}</td>
+                    <td>{{prod.preco}}</td>
+                    <td><a href="" type="button" class="btn btn-danger"  ng-click="vm.removerProduto(prod.produtoID)">Delete</a></td>
+
+                    <td><a href="#/produto/edit/{{prod.produtoID}}" type="button" class="btn btn-primary"  >Editar</a></td>
+                    
+                    <td><a href="#/produto/detalhes/{{prod.produtoID}}" type="button" class="btn btn-info"  >Detalhes</a></td>
+                </tr>
+        </tbody>
+    </table>
+</section>
