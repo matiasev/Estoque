@@ -1,0 +1,9 @@
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\bin\Debug\netcoreapp1.1\Estoque.Data.deps.json
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\bin\Debug\netcoreapp1.1\Estoque.Data.runtimeconfig.json
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\bin\Debug\netcoreapp1.1\Estoque.Data.runtimeconfig.dev.json
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\bin\Debug\netcoreapp1.1\Estoque.Data.dll
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\bin\Debug\netcoreapp1.1\Estoque.Data.pdb
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\obj\Debug\netcoreapp1.1\Estoque.Data.csprojResolveAssemblyReference.cache
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\obj\Debug\netcoreapp1.1\Estoque.Data.AssemblyInfo.cs
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\obj\Debug\netcoreapp1.1\Estoque.Data.dll
+c:\users\evand\documents\visual studio 2017\Projects\Estoque\Estoque.Data\obj\Debug\netcoreapp1.1\Estoque.Data.pdb
