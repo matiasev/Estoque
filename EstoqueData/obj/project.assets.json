@@ -9342,10 +9342,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj",
+      "projectUniqueName": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj",
       "projectName": "EstoqueData",
-      "projectPath": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj",
-      "outputPath": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueData\\obj\\",
+      "projectPath": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj",
+      "outputPath": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueData\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
