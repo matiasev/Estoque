@@ -10790,7 +10790,7 @@
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v1.1": [
-      "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\Estoque.Data\\EstoqueData.csproj",
+      "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\Estoque.Data\\EstoqueData.csproj",
       "EstoqueData >= 1.0.0",
       "Microsoft.ApplicationInsights.AspNetCore >= 2.1.1",
       "Microsoft.AspNetCore >= 1.1.2",
@@ -10813,10 +10813,10 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueApi\\EstoqueApi.csproj",
+      "projectUniqueName": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueApi\\EstoqueApi.csproj",
       "projectName": "EstoqueApi",
-      "projectPath": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueApi\\EstoqueApi.csproj",
-      "outputPath": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueApi\\obj\\",
+      "projectPath": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueApi\\EstoqueApi.csproj",
+      "outputPath": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueApi\\obj\\",
       "projectStyle": "PackageReference",
       "originalTargetFrameworks": [
         "netcoreapp1.1"
@@ -10824,11 +10824,11 @@
       "frameworks": {
         "netcoreapp1.1": {
           "projectReferences": {
-            "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj": {
-              "projectPath": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj"
+            "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj": {
+              "projectPath": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\EstoqueData\\EstoqueData.csproj"
             },
-            "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\Estoque.Data\\EstoqueData.csproj": {
-              "projectPath": "C:\\Users\\evand\\Documents\\Visual Studio 2017\\Projects\\Estoque\\Estoque.Data\\EstoqueData.csproj"
+            "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\Estoque.Data\\EstoqueData.csproj": {
+              "projectPath": "C:\\Users\\evand\\documents\\visual studio 2017\\Projects\\Estoque\\Estoque.Data\\EstoqueData.csproj"
             }
           }
         }
