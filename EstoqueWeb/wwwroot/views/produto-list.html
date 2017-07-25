@@ -1,5 +1,10 @@
 <section>
     <legend>Lista de produtos</legend>
+    <div class="input-group">
+        <span class="input-group-addon">Busca produto</span>
+        <input type="text" class="form-control" placeholder="Nome" ng-model="search">
+    </div>
+    <br />
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
@@ -12,7 +17,7 @@
                 <th></th>
             </tr>
         </thead>
-        <tbody ng-repeat="prod in vm.produtos">
+        <tbody ng-repeat="prod in vm.produtos | filter:{nome: search}">
             <tr>
                     <td>{{prod.produtoID}}</td>
                     <td>{{prod.nome}}</td>
