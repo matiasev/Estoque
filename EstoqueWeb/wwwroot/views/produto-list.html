@@ -1,14 +1,13 @@
 <section>
     <legend>Lista de produtos</legend>
     <div class="input-group">
-        <span class="input-group-addon">Busca produto</span>
+        <span class="input-group-addon">Buscar produto</span>
         <input type="text" class="form-control" placeholder="Nome" ng-model="search">
     </div>
     <br />
     <table class="table table-bordered table-hover">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Nome</th>
                 <th>Quantidade</th>
                 <th>Preço</th>
@@ -19,16 +18,13 @@
         </thead>
         <tbody ng-repeat="prod in vm.produtos | filter:{nome: search}">
             <tr>
-                    <td>{{prod.produtoID}}</td>
-                    <td>{{prod.nome}}</td>
-                    <td>{{prod.quantidade}}</td>
-                    <td>{{prod.preco}}</td>
-                    <td><a href="" type="button" class="btn btn-danger"  ng-click="vm.removerProduto(prod.produtoID)">Delete</a></td>
-
-                    <td><a href="#!/produto/edit/{{prod.produtoID}}" type="button" class="btn btn-primary"  >Editar</a></td>
-                    
-                    <td><a href="#!/produto/detalhes/{{prod.produtoID}}" type="button" class="btn btn-info"  >Detalhes</a></td>
-                </tr>
+                <td>{{prod.nome}}</td>
+                <td>{{prod.quantidade}}</td>
+                <td>{{prod.preco}}</td>
+                <td><a href="" type="button" class="btn btn-danger"  ng-click="vm.removerProduto(prod.produtoID)">Delete</a></td>
+                <td><a href="#!/produto/edit/{{prod.produtoID}}" type="button" class="btn btn-primary"  >Editar</a></td>                    
+                <td><a href="#!/produto/detalhes/{{prod.produtoID}}" type="button" class="btn btn-info"  >Detalhes</a></td>
+           </tr>
         </tbody>
     </table>
 </section>

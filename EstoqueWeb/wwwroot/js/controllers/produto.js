@@ -17,7 +17,7 @@
 
         function init(){
             produtoService.getData().then(function successCallback(response) {
-                console.log('Data: ', response);
+                //console.log('Data: ', response);
                 vm.produtos = response.data;
                 delete vm.addProduto;
             }, function errorCallback(response) {
