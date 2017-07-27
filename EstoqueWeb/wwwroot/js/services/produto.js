@@ -8,7 +8,7 @@
    
     function produtoService(http){
 
-        let serviceBase = "http://localhost:59733/";
+        const serviceBase = "http://localhost:59733/";
 
         return {
             getData: getData,
