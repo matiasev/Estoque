@@ -17,8 +17,10 @@ namespace EstoqueData.Data
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Produto>().ToTable("Produto");
+            modelBuilder.Entity<Fornecedor>().ToTable("Fornecedor");
         }
 
         public DbSet<Produto> Produtos { get; set; }
+        public DbSet<Fornecedor> Fornecedores { get; set; }
     }
 }
