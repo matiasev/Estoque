@@ -1,14 +1,15 @@
 <div class="container">
     <a href="#!/">Return</a>
     <legend>Detalhe do produto</legend>
-    <table class="table table-bordered table-hover">
+    <table class="table table-bordered table-hover list">
     <thead>
         <tr>
             <th>Id</th>
             <th>Nome</th>
             <th>Quantidade</th>
             <th>Preço</th>
-            
+            <th>Data Entrada</th>
+            <th>Fornecedor</th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +18,8 @@
             <td>{{vm.produto.nome}}</td>
             <td>{{vm.produto.quantidade}}</td>
             <td>{{vm.produto.preco}}</td>
+            <td>{{vm.produto.dataEntrada | date:'dd/MM/yyyy HH:mm'}}</td>
+            <td>{{vm.produto.fornecedor.nome}}</td>
         </tr>
     </tbody>
 </table>
