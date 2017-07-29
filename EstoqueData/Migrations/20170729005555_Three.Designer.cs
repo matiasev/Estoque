@@ -8,9 +8,10 @@ using EstoqueData.Data;
 namespace EstoqueData.Migrations
 {
     [DbContext(typeof(EstoqueContext))]
-    partial class EstoqueContextModelSnapshot : ModelSnapshot
+    [Migration("20170729005555_Three")]
+    partial class Three
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
             modelBuilder
                 .HasAnnotation("ProductVersion", "1.1.2")
