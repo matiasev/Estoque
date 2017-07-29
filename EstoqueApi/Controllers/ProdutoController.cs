@@ -27,7 +27,11 @@ namespace EstoqueApi.Controllers
         [HttpGet]
         public IEnumerable<Produto> GetProdutos()
         {
-            return _context.Produtos;
+            var list = _context.Produtos
+                .Include(d => d.Fornecedor)
+                .ToList();
+
+            return list;
         }
 
         // GET: api/Produto/5
@@ -39,7 +43,9 @@ namespace EstoqueApi.Controllers
                 return BadRequest(ModelState);
             }
 
-            var produto = await _context.Produtos.SingleOrDefaultAsync(m => m.ProdutoID == id);
+            var produto = await _context.Produtos
+                .Include(d => d.Fornecedor)
+                .SingleOrDefaultAsync(m => m.ProdutoID == id);
 
             if (produto == null)
             {
@@ -92,6 +98,9 @@ namespace EstoqueApi.Controllers
             {
                 return BadRequest(ModelState);
             }
+
+            DateTime data = DateTime.Now;
+            produto.DataEntrada = data;
 
             _context.Produtos.Add(produto);
             await _context.SaveChangesAsync();
