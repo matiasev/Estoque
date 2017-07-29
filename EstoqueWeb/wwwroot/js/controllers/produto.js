@@ -12,36 +12,40 @@
 
         vm.routeParams = $routeParams;
         vm.produtos = [];
+        vm.fornecedores = [];
 
         init();
+        
 
         function init(){
             produtoService.getData().then(function successCallback(response) {
-                //console.log('Data: ', response);
                 vm.produtos = response.data;
-                delete vm.addProduto;
+            }, function errorCallback(response) {
+                console.log('Erro: ', response);
+            });
+
+            produtoService.getFornecedor().then(function successCallback(response) {
+                vm.fornecedores = response.data;
             }, function errorCallback(response) {
                 console.log('Erro: ', response);
             });
         }
 
-        vm.adicionarProduto = function(item){
+   
+        vm.adicionarProduto = function (item) {
             debugger;
-            if (item != null) {
-                produtoService.postData(item).then(function successCallback(response){
-                    init();
-                }, function errorCallback(response) {
-                    console.log('Erro: ', response);
-                });
-            }else{
-                alert('Campo vazio!');
-            }
+            produtoService.postData(item).then(function successCallback(response) {
+                delete vm.addProduto;
+                init();
+                alert("Produto adicionado com sucesso!");
+            }, function errorCallback(response) {
+                console.log('Erro: ', response);
+            });  
         }
 
         vm.detalhesProduto = function(item){
             produtoService.getItemData(item).then(function successCallback(response){   
                 vm.produto = response.data;
-                debugger;
             }, function errorCallback(response) {
                 console.log('Erro: ', response);
             });
@@ -66,8 +70,8 @@
         
         init($routeParams.id);
 
-        function init(item){
-            produtoService.getItemData(item).then(function successCallback(response){
+        function init(item) {
+            produtoService.getItemData(item).then(function successCallback(response) {
                 vm.produto = response.data;
             }, function errorCallback(response) {
                 console.log('Erro: ', response);
@@ -83,25 +87,28 @@
         init($routeParams.id);
 
         function init(item){
-            produtoService.getItemData(item).then(function successCallback(response){
+            produtoService.getItemData(item).then(function successCallback(response) {
+                debugger;
                 vm.addProduto = response.data;
             }, function errorCallback(response) {
                 console.log('Erro: ', response);
             });
+
+            produtoService.getFornecedor().then(function successCallback(response) {
+                vm.fornecedores = response.data;
+            }, function errorCallback(response) {
+                console.log('Erro: ', response);
+            });
+            
         }
 
-         vm.salvarProduto = function(item){
+        vm.salvarProduto = function(item){
             debugger;
-            if (item.nome != null) {
-                produtoService.putData(item).then(function successCallback(response){
-                    $location.path('#/');
-                }, function errorCallback(response) {
-                    console.log('Erro: ', response);
-                });
-            }else{
-                alert('Campo vazio!');
-            }
+            produtoService.putData(item).then(function successCallback(response) {
+                $location.path('#!/');
+            }, function errorCallback(response) {
+                console.log('Erro: ', response);
+            });
         }
     }
-
 }());

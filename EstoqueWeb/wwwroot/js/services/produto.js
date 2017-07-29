@@ -15,7 +15,8 @@
             postData: postData,
             getItemData: getItemData,
             removerData: removerData,
-            putData: putData
+            putData: putData,
+            getFornecedor: getFornecedor
         }
 
         function getData(){
@@ -37,7 +38,10 @@
         function putData(item){
             return http.put(serviceBase + "api/produto/" + item.produtoID, item);
         }
-        
+
+        function getFornecedor() {
+            return http.get(serviceBase + "api/Fornecedor");
+        }
     }
 
 }());
