@@ -12,9 +12,10 @@ namespace EstoqueData.Models
         public string Nome { get; set; }
         public int Quantidade { get; set; }
         public int Preco { get; set; }
+        public int FornecedorID { get; set; }
 
-        //[DataType(DataType.Date)]
-        //[DisplayFormat(DataFormatString = "{0:dd-MM-yyyy}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.Date)]
+        [DisplayFormat(DataFormatString = "{dd/MM/yyyy HH:mm}", ApplyFormatInEditMode = true)]
         public DateTime DataEntrada { get; set; }
 
         public Fornecedor Fornecedor { get; set; }
