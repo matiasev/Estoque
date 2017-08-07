@@ -14,6 +14,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.gitignore = .gitignore
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstoqueTest", "EstoqueTest\EstoqueTest.csproj", "{AF3A8F2C-56C9-4369-8F7B-AF25ECEB759D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{46514FF0-A5F1-42F3-8394-69B9C328AE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46514FF0-A5F1-42F3-8394-69B9C328AE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46514FF0-A5F1-42F3-8394-69B9C328AE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF3A8F2C-56C9-4369-8F7B-AF25ECEB759D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF3A8F2C-56C9-4369-8F7B-AF25ECEB759D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF3A8F2C-56C9-4369-8F7B-AF25ECEB759D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF3A8F2C-56C9-4369-8F7B-AF25ECEB759D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -2,6 +2,7 @@
 # http://git-scm.com/docs/gitignore
 
 .vs/
+packages/
 
 EstoqueApi/bin/
 EstoqueApi/obj/
@@ -12,3 +13,8 @@ EstoqueData/obj/
 EstoqueWeb/bin/
 EstoqueWeb/obj/
 EstoqueWeb/wwwroot/lib/
+
+EstoqueTest/bin/
+EstoqueTest/obj/
+
+

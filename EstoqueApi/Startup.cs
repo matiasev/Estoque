@@ -42,7 +42,7 @@ namespace EstoqueApi
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory/*, EstoqueContext context*/)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory, EstoqueContext context)
         {
             loggerFactory.AddConsole(Configuration.GetSection("Logging"));
             loggerFactory.AddDebug();
@@ -51,7 +51,7 @@ namespace EstoqueApi
 
             app.UseCors("MyAppPolicy");
 
-            //DbInitializer.Initialize(context);
+            DbInitializer.Initialize(context);
         }
     }
 }
